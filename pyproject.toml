@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discordrd"
+version = "0.1.0"
+description = "DiscoRD: discordance retrieval for sparse evaluation of LLMs"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Anonymous Authors" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.2",
+    "scipy>=1.15",
+    "scikit-learn>=1.7",
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "pyyaml>=6",
+    "threadpoolctl>=3",
+    "torch>=2.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

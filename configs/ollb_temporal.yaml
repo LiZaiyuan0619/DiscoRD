@@ -1,0 +1,9 @@
+# OLLB-temporal: first version of the leaderboard (ARC, GSM8K, HellaSwag, MMLU, TruthfulQA,
+# WinoGrande; 817-14,042 questions), split at 1 April 2024.  Memory 2,585 earlier models,
+# transfer 300, validation 300; candidates 630 later models (see data/README.md).
+setting: ollb_temporal
+budgets: [20, 100]
+seeds: [42, 0, 1]
+repeats: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+data: data/processed/ollb
+out: outputs

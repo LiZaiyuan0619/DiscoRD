@@ -1,0 +1,8 @@
+# WILD: 65 production models, the 24 benchmarks with at least 500 questions.
+# Outer folds hold out one organisation; memory 33-56, validation 7-15, candidates 1-17 per fold.
+budgets: [10, 20, 50]
+seeds: [42, 0, 1]
+repeats: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+epochs: 20000
+data: data/processed/wild
+out: outputs/wild

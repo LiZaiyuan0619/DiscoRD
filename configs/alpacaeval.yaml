@@ -1,0 +1,8 @@
+# AlpacaEval: one benchmark of 790 instructions, continuous scores in [0, 1].
+# 218 models split at random per seed: memory 130, validation 44, candidates 44.
+# Anchor questions drawn uniformly at random.
+budgets: [20, 100]
+seeds: [42, 0, 1]
+repeats: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+data: data/processed/alpacaeval
+out: outputs/alpacaeval

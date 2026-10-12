@@ -1,0 +1,11 @@
+# DataDecide: 6,612 checkpoints of small pretraining runs, nine benchmarks (500-10,042 questions).
+# Runs split once by pretraining data mix; validation 45 and candidates 45 final checkpoints;
+# memory of 135-3,964 checkpoints (final / sampled / all checkpoints of the memory runs).
+budgets: [20, 100]
+seeds: [42, 0, 1]
+repeats: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+memories: [trajectory_final, trajectory_sampled, all_checkpoints]
+benchmarks: [arc_challenge, arc_easy, boolq, csqa, hellaswag, openbookqa, piqa, socialiqa, winogrande]
+epochs: 20000
+data: data/processed/datadecide
+out: outputs/datadecide

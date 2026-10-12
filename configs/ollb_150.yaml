@@ -1,0 +1,9 @@
+# OLLB-150: second version of the Open LLM Leaderboard, six benchmarks (756-12,032 questions).
+# Memory 640, transfer 150 (fits Ridge transfer), validation 150, candidates 150 held-out models,
+# split by whole organisations per seed.  SparseEval chooses the anchor questions.
+setting: ollb_150
+budgets: [20, 100]
+seeds: [42, 0, 1]
+repeats: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+data: data/processed/ollb
+out: outputs

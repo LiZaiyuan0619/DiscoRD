@@ -1,0 +1,8 @@
+# OLLB-708: as OLLB-150, but the candidates are the 708 models uploaded in 2025-Q1,
+# after every past model.
+setting: ollb_708
+budgets: [20, 100]
+seeds: [42, 0, 1]
+repeats: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+data: data/processed/ollb
+out: outputs

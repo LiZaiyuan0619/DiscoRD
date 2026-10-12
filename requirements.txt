@@ -1,0 +1,11 @@
+# Versions used for the experiments in the paper (Appendix C).
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+pandas==2.3.3
+pyarrow==24.0.0
+pyyaml==6.0.3
+threadpoolctl==3.6.0
+# CPU build is enough: no step of the pipeline needs a GPU.
+torch==2.13.0
+pytest==9.0.2
